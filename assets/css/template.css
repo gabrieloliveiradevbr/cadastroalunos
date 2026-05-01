@@ -29,8 +29,8 @@ CONTAINER
 
 .container{
     width:100%;
-    max-width:1600px;
-    padding:0 15px;
+    max-width:1600px; 
+    padding:0 20px;
     margin:auto;
 }
 
@@ -38,46 +38,49 @@ CONTAINER
 HEADER
 ========================= */
 
+header{
+    padding:10px 0; 
+}
+
 header .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:10px 0;
 }
 
-.local-selecionado {
+.local-selecionado{
     display:flex;
     align-items:center;
 }
 
-.local {
+.local{
     font-size:1.6rem;
     font-weight:bold;
     margin-right:15px;
 }
 
-.acao {
+.acao{
     font-size:1.2rem;
 }
 
-.atalho-info {
+.atalho-info{
     display:flex;
     align-items:center;
 }
 
 .area-aluno > a, 
-.area-secretaria > a {
+.area-secretaria > a{
     font-size:1rem;
     text-decoration:none;
     color:#000;
 }
 
-#seta {
+#seta{
     margin:0 10px;
 }
 
 /* =========================
-CONTEÚDO (FIX DO FOOTER)
+CONTEÚDO (FIX FOOTER)
 ========================= */
 
 section{
@@ -99,7 +102,7 @@ GERAL
 .geral{
     display:flex;
     flex:1;
-    gap:20px;
+    gap:30px; /* 🔥 mais espaço lateral */
 }
 
 /* =========================
@@ -122,7 +125,7 @@ CARDS
 }
 
 .aluno-info-foto img{
-    max-width:200px;
+    max-width:220px;
     border-radius:50%;
     margin:auto;
 }
@@ -135,12 +138,12 @@ CARDS
 }
 
 .aluno-info-nome h1{
-    font-size:1.4rem;
+    font-size:1.5rem;
 }
 
 .aluno-info-matricula p,
 .aluno-info-status p{
-    font-size:1.1rem;
+    font-size:1.2rem;
 }
 
 /* BOTÕES */
@@ -225,8 +228,6 @@ footer{
 /* =========================
 RESPONSIVO
 ========================= */
-
-
 
 @media (max-width:768px){
 
