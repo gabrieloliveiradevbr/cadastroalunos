@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BASE */
+
+html, body{
+    height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    background:#ECF0F5;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container{
+    width:100%;
+    max-width:1600px;
+    padding:0 15px;
+    margin:auto;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+}
+
+.local-selecionado {
+    display:flex;
+    align-items:center;
+}
+
+.local {
+    font-size:1.6rem;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.acao {
+    font-size:1.2rem;
+}
+
+.atalho-info {
+    display:flex;
+    align-items:center;
+}
+
+.area-aluno > a, 
+.area-secretaria > a {
+    font-size:1rem;
+    text-decoration:none;
+    color:#000;
+}
+
+#seta {
+    margin:0 10px;
+}
+
+/* =========================
+CONTEÚDO (FIX DO FOOTER)
+========================= */
+
+section{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+section .container{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+GERAL
+========================= */
+
+.geral{
+    display:flex;
+    flex:1;
+    gap:20px;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.aluno-info,
+.aluno-info-dados{
+    width:100%;
+    background:#fff;
+    border-radius:10px;
+}
+
+/* LADO ESQUERDO */
+
+.aluno-info{
+    flex:1;
+    padding:20px;
+    text-align:center;
+}
+
+.aluno-info-foto img{
+    max-width:200px;
+    border-radius:50%;
+    margin:auto;
+}
+
+.aluno-info-nome,
+.aluno-info-matricula,
+.aluno-info-status,
+.aluno-info-acoes{
+    margin-top:10px;
+}
+
+.aluno-info-nome h1{
+    font-size:1.4rem;
+}
+
+.aluno-info-matricula p,
+.aluno-info-status p{
+    font-size:1.1rem;
+}
+
+/* BOTÕES */
+
+.aluno-info-acoes button,
+button{
+    width:100%;
+    max-width:200px;
+    height:40px;
+    border:none;
+    background:#007BFF;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:5px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* =========================
+LADO DIREITO
+========================= */
+
+.aluno-info-dados{
+    flex:3;
+    padding:20px;
+}
+
+/* FORM */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* INPUTS */
+
+.input-group{
+    display:flex;
+    gap:20px;
+}
+
+.input-title{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.input-title label{
+    margin-bottom:5px;
+}
+
+.input-title input,
+.input-title select{
+    height:40px;
+    padding:8px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#378BF8;
+    color:#fff;
+    padding:15px 0;
+    margin-top: 20px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:0.9rem;
+}
+
+/* =========================
+RESPONSIVO
+========================= */
+
+
+
+@media (max-width:768px){
+
+    .geral{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .input-group{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    button{
+        max-width:none;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+        gap:5px;
+    }
+}
+
+/* MOBILE PEQUENO */
+
+@media (max-width:480px){
+
+    .container{
+        padding:0 10px;
+    }
+
+    .aluno-info,
+    .aluno-info-dados{
+        padding:15px;
+    }
+
+    .local{
+        font-size:1.3rem;
+    }
+
+    .acao{
+        font-size:1rem;
+    }
+
+    .aluno-info-foto img{
+        max-width:140px;
+    }
+}
